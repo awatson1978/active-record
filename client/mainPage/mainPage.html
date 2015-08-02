@@ -1,0 +1,62 @@
+<template name="mainPage">
+  <div id="mainPage" class="padded page" style="{{getOpacity}}">
+
+
+    <hr>
+    <h2 class="fullwidth centered">ActiveRecord</h2>
+    <p>
+      An ActiveRecord reference implementation using <a href="http://www.meteor.com">Meteor</a>, <a href="https://atmospherejs.com/aldeed/autoform">AutoForms</a>, and aiming for a Day Made of Glass user interface.  Part of the Glass UI subproject of the <a href="http://clinincal.meteor.com">Clinical Meteor Track</a>.
+    </p>
+    <button id="listButton" class="fullwidth btn-main" style="{{btnPrimary}}">See the Demo</button>
+    <br><br>
+
+    <hr>
+    <h4 class="fullwidth centered">Install the Reference App</h4>
+    {{#prism language="bash"}}
+      git clone http://github.com/awatson1978/active-record-demo
+      cd active-record-demo
+      meteor
+    {{/prism}}
+    <p>
+    </p>
+
+    <!-- <hr>
+    <h4 class="fullwidth centered">Install the Package(s)</h4>
+    <p>
+      Each page in this ActiveRecord pattern is it's own component.  You can either grab the entire pattern by using the ``glass:active-record`` meta-package; or you can download the individual packages and custom assemble your own CRUDL pattern.
+    </p>
+    {{#prism language="bash"}}
+      # turn-key installation
+      meteor add glass:active-record
+
+      # piecemeal 5-page installation (CRUDL)
+      meteor add glass:ui-styling
+      meteor add glass:active-record-core
+      meteor add glass:active-record-list
+      meteor add glass:active-record-new
+      meteor add glass:active-record-edit
+      meteor add glass:active-record-preview
+
+      # upsert with grid, table, and list
+      meteor add glass:ui-styling
+      meteor add glass:active-record-core
+      meteor add glass:active-record-upsert
+      meteor add glass:active-record-table
+      meteor add glass:active-record-imagegrid
+      meteor add glass:active-record-list
+
+      # simple-schema based pattern
+      meteor add glass:ui-styling
+      meteor add glass:active-record-core
+      meteor add glass:active-form-upsert
+      meteor add glass:active-table
+    {{/prism}} -->
+
+
+    <hr>
+    <h4>Design Inspiration</h4>
+    <iframe width="100%" height="315" src="//www.youtube.com/embed/jZkHpNnXLB0" frameborder="0" allowfullscreen></iframe>
+
+
+  </div>
+</template>
