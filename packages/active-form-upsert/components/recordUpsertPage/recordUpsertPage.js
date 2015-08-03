@@ -71,17 +71,7 @@ Template.recordUpsertPage.helpers({
 });
 
 Template.recordUpsertPage.events({
-  'click #removeRecordButton': function () {
-    Foo.remove(this._id, function (error, result) {
-      if (result) {
-        Router.go('/list/foos');
-      }
-    });
-  },
-  "click #saveRecordButton": function () {
-    Template.recordUpsertPage.saveFoo(this);
-    Session.set('recordReadOnly', true);
-  },
+
   "click .barcode": function () {
     // TODO:  refactor to Session.toggle('recordReadOnly')
     if (Session.equals('recordReadOnly', true)) {
@@ -101,7 +91,7 @@ Template.recordUpsertPage.events({
       Session.set('recordReadOnly', true);
     }
   },
-  "click #fooListButton": function (event, template) {
+  "click .listButton": function (event, template) {
     Router.go('/list/foos');
   },
   "click .imageGridButton": function (event, template) {

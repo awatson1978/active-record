@@ -7,12 +7,10 @@
         {{#each afFieldNames}}
           {{> afQuickField name=this.name options=afOptionsFromSchema autocomplete="off"}}
         {{/each}}
+        
+      <button id="newRecordButton" type="submit" class="glass-footer-btn">Save Foo</button>
 
-        <div class="pageFooter">
-          <button id="newRecordButton" type="submit" class="glass-footer-btn">Save Foo</button>
-        </div>
       {{/autoForm}}
     </div>
-
   </article>
 </template>

@@ -3,14 +3,11 @@ exports.command = function (record, title, url, imageUrl, description) {
   // first we test that default elements are there
   this
     .verify.elementPresent("#recordUpsertPage")
-    .verify.elementPresent("#recordUpsertPage .pageHeader")
+    .verify.elementPresent("#recordUpsertPage .recordHeader")
     .verify.elementPresent("#recordUpsertCard")
-    .verify.elementPresent("#recordMetaData")
-    .verify.elementPresent("#recordMetaInputs")
     .verify.elementPresent('input[name="title"]')
     .verify.elementPresent('input[name="url"]')
     .verify.elementPresent('input[name="imageUrl"]')
-    .verify.elementPresent("#recordImage")
     .verify.elementPresent('input[name="description"]')
 
 
@@ -46,7 +43,7 @@ exports.command = function (record, title, url, imageUrl, description) {
   }
 
   this
-    .verify.elementPresent("#recordUpsertPage .pageFooter")
+    .verify.elementPresent("#recordUpsertPage .recordFooter")
     .verify.elementPresent("#saveRecordButton");
   return this;
 };

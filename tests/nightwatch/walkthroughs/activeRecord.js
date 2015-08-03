@@ -61,10 +61,10 @@ module.exports = {
   "H. Reviewing HelloCthulu Info": function ( client ) {
     client
       .reviewFormUpsertPage( helloCthulu )
-      .verify.elementPresent( "#fooListButton" )
-      .verify.visible( "#fooListButton" )
-      .moveToElement( '#fooListButton', 10, 10 )
-      .click( "#fooListButton" ).pause( 1000 )
+      .verify.elementPresent( ".listButton" )
+      .verify.visible( ".listButton" )
+      .moveToElement( '.listButton', 10, 10 )
+      .click( ".listButton" ).pause( 1000 )
       .waitForElementPresent('#recordsListPage', 1000);
   },
   "I. Reviewing Record List Page": function ( client ) {
@@ -72,8 +72,8 @@ module.exports = {
       .reviewRecordsListPage( helloCthulu.title, false, helloCthulu.description, false )
 
     // we've only added one new record; there shouldn't be a second (yet)!
-    .verify.elementNotPresent( "#foosUnorderedList li:nth-child(2)" )
-      .click( "#foosUnorderedList li:nth-child(1)" ).pause( 300 );
+    .verify.elementNotPresent( "#unorderedList li:nth-child(2)" )
+      .click( "#unorderedList li:nth-child(1)" ).pause( 300 );
   },
   "J. Removing Record": function ( client ) {
     client

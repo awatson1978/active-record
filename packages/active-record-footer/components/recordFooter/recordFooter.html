@@ -4,7 +4,7 @@
   <footer class="recordFooter" style={{getOpacity}}>
     {{#if isUpsert}}
       <button id="saveRecordButton">Save</button>
-      {{#if _id}}
+      {{#if hasId}}
         <button id="removeRecordButton">Remove</button>
       {{/if}}
     {{else}}

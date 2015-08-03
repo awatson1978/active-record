@@ -101,7 +101,7 @@ Template.recordUpsertPage.events({
       Session.set('recordReadOnly', true);
     }
   },
-  "click #fooListButton": function(event, template){
+  "click .listButton": function(event, template){
     Router.go('/list/foos');
   },
   "click .imageGridButton": function(event, template){

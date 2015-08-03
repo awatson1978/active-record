@@ -28,8 +28,8 @@
         {{/each}}
         <!-- {{> afQuickField name=this.name name='description' placeholder="schemaLabel" label=false class="glass form-control" rows="10"}} -->
       {{/autoForm}}
-
     </div>
-    {{> recordFooter type="upsert"}}
+
+    {{> recordFooter type="upsert" doc=this}}
   </article>
 </template>
