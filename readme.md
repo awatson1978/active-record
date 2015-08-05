@@ -1,4 +1,4 @@
-## active-user-demo
+## active-record
 
 An ActiveRecord reference implementation using Meteor, AutoForms, and aiming for a Day Made of Glass user interface. Part of the Glass UI subproject of the Clinical Meteor Track.
 
@@ -7,7 +7,7 @@ An ActiveRecord reference implementation using Meteor, AutoForms, and aiming for
 The ActiveRecord package is a meta-package comprised of a number of sub-packages.  The easiest way to install it is to:
 
 ````sh
-  meteor add glass:active-record
+  meteor add photonic:active-record
 ````
 
 =========================
@@ -46,16 +46,16 @@ Posts.attachSchema(PostsSchema);
 As mentioned above, ActiveRecord is a meta-package, and comprised of many sub-packages. If you want to create custom cards, and make modifications, it's recommended to install the individuals packages.
 
 ````sh
-meteor add glass:ui-styling
-meteor add glass:active-record-core
-meteor add glass:active-record-new
-meteor add glass:active-record-edit
-meteor add glass:active-record-preview
-meteor add glass:active-record-list
-meteor add glass:active-record-table
-meteor add glass:active-record-imagegrid
-meteor add glass:active-record-header
-meteor add glass:active-record-footer
+meteor add photonic:ui-styling
+meteor add photonic:active-record-core
+meteor add photonic:active-record-new
+meteor add photonic:active-record-edit
+meteor add photonic:active-record-preview
+meteor add photonic:active-record-list
+meteor add photonic:active-record-table
+meteor add photonic:active-record-imagegrid
+meteor add photonic:active-record-header
+meteor add photonic:active-record-footer
 ````
 
 =========================
@@ -65,13 +65,13 @@ Install the ActiveForm pattern with the folowing packges:
 
 ````
 # turn-key installation
-meteor add glass:active-form
+meteor add photonic:active-form
 
 # simple-schema based pattern
-meteor add glass:ui-styling
-meteor add glass:active-record-core
-meteor add glass:active-form-upsert
-meteor add glass:active-table
+meteor add photonic:ui-styling
+meteor add photonic:active-record-core
+meteor add photonic:active-form-upsert
+meteor add photonic:active-table
 ````
 
 =========================

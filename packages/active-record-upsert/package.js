@@ -1,15 +1,15 @@
 Package.describe({
-  name:'glass:active-record-upsert',
+  name:'photonic:active-record-upsert',
   version: '0.0.1',
-  sumary: '',
-  git: '',
+  summary: 'Photonic::ActiveRecord::recordUpsertPage',
+  git: 'http://github.com/awatson1978/active-record/packages/active-record-upsert',
   documentation: 'README.md',
 });
 
 Package.onUse( function ( api ) {
   api.versionsFrom('1.1.0.2');
   api.use('meteor-platform');
-  api.use('iron:router');
+  api.use('iron:router@1.0.7');
   api.use('less');
 
   api.addFiles('components/recordUpsertPage/recordUpsertPage.html', ['client']);
@@ -21,6 +21,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('glass:active-record-upsert');
+  api.use('photonic:active-record-upsert');
   api.addFiles('active-record-upsert-tests.js');
 });

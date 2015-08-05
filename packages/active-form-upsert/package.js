@@ -1,8 +1,8 @@
 Package.describe({
-  name:'glass:active-record-upsert',
+  name:'photonic:active-form-upsert',
   version: '0.0.1',
-  sumary: '',
-  git: '',
+  summary: 'Photonic::ActiveForm::recordUpsertPage',
+  git: 'http://github.com/awatson1978/active-record/packages/active-form-upsert',
   documentation: 'README.md',
 });
 
@@ -13,7 +13,7 @@ Package.onUse( function ( api ) {
   api.use('aldeed:autoform@5.3.2');
 
   api.use('meteor-platform');
-  api.use('iron:router');
+  api.use('iron:router@1.0.7');
   api.use('less');
 
   api.addFiles('components/recordUpsertPage/recordUpsertPage.html', ['client']);
@@ -25,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('glass:active-record-upsert');
-  api.addFiles('active-record-upsert-tests.js');
+  api.use('photonic:active-form-upsert');
+  api.addFiles('active-form-upsert-tests.js');
 });

@@ -1,8 +1,8 @@
 Package.describe({
-  name:'photonic:active-form-preview',
+  name:'photonic:active-record-preview',
   version: '0.0.1',
-  summary: 'Photonic::ActiveForm::recordPreviewPage',
-  git: 'http://github.com/awatson1978/active-record/packages/active-form-preview',
+  summary: 'Photonic::ActiveRecord::recordPreviewPage',
+  git: 'http://github.com/awatson1978/active-record/packages/active-record-preview',
   documentation: 'README.md',
 });
 
@@ -25,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('photonic:active-form-preview');
-  api.addFiles('active-form-preview-tests.js');
+  api.use('photonic:active-record-preview');
+  api.addFiles('active-record-preview-tests.js');
 });

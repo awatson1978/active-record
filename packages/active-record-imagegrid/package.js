@@ -1,20 +1,20 @@
 Package.describe({
-  name:'glass:active-record-imagegrid',
+  name:'photonic:active-record-imagegrid',
   version: '0.0.1',
-  sumary: '',
-  git: '',
+  summary: 'Photonic::ActiveRecord::recordImageGridPage',
+  git: 'http://github.com/awatson1978/active-record/packages/active-record-imagegrid',
   documentation: 'README.md',
 });
 
 Package.onUse( function ( api ) {
   api.versionsFrom('1.1.0.2');
   api.use('meteor-platform');
-  api.use('iron:router');
+  api.use('iron:router@1.0.7');
   api.use('less');
 
-  api.use('glass:active-record-core');
-  api.use('glass:active-record-header');
-  api.use('glass:active-record-footer');
+  api.use('photonic:active-record-core@0.0.1');
+  api.use('photonic:active-record-header@0.0.1');
+  api.use('photonic:active-record-footer@0.0.1');
 
   api.addFiles('components/recordImageGridPage/recordImageGridPage.html', ['client']);
   api.addFiles('components/recordImageGridPage/recordImageGridPage.js', ['client']);
@@ -25,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('glass:active-record-imagegrid');
+  api.use('photonic:active-record-imagegrid');
   api.addFiles('active-record-imagegrid-tests.js');
 });

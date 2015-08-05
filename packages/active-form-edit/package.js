@@ -1,10 +1,11 @@
 Package.describe({
-  name:'glass:active-record-edit',
+  name:'photonic:active-form-edit',
   version: '0.0.1',
-  sumary: '',
-  git: '',
+  summary: 'Photonic::ActiveForm::recordEditPage',
+  git: 'http://github.com/awatson1978/active-record/packages/active-form-edit',
   documentation: 'README.md',
 });
+
 
 Package.onUse( function ( api ) {
   api.versionsFrom('1.1.0.2');
@@ -13,7 +14,7 @@ Package.onUse( function ( api ) {
   api.use('aldeed:autoform@5.3.2');
 
   api.use('meteor-platform');
-  api.use('iron:router');
+  api.use('iron:router@1.0.7');
   api.use('less');
 
   api.addFiles('components/recordEditPage/recordEditPage.html', ['client']);
@@ -23,8 +24,9 @@ Package.onUse( function ( api ) {
   api.export('recordEditPage');
 });
 
+
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('glass:active-record-edit');
-  api.addFiles('active-record-edit-tests.js');
+  api.use('photonic:active-form-edit');
+  api.addFiles('active-form-edit-tests.js');
 });

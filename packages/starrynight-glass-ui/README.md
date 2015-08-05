@@ -1,4 +1,4 @@
-glass:glass-ui
+photonic:glass-ui
 ===============================
 
 Generally inspried by the [Day Made of Glass](https://www.youtube.com/watch?v=jzLYh3j6xn8) videos.  Currently, this package only contains a ``.less`` stylesheet that's focused on haptics (big buttons), multi-device accessibility (media states), and transparency effects.  
@@ -10,11 +10,11 @@ Generally inspried by the [Day Made of Glass](https://www.youtube.com/watch?v=jz
 This is going to become a meta-package, and incorporate a number of other animation packages.  We're currently looking at the following packages to add into the Glass UI.  
 
 
-  glass:glass-ui
+  photonic:glass-ui
     grigio:babel
     animate.js
     mrt:jquery-easing
-    glass:jss
+    photonic:jss
     percolate:momentum
     gadicohen:famous-views
     particle4dev:famous-flex
@@ -25,7 +25,7 @@ This is going to become a meta-package, and incorporate a number of other animat
     oorabona:fview-boxlayout
 
 
-  glass:card-ui
+  photonic:card-ui
     peerlibrary:blaze-components / react
 -   aldeed:template-extensions
     numtel:web-components

@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'glass:active-record-core',
+  name: 'photonic:active-record-core',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Photonic::ActiveRecord::Core',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'http://github.com/awatson1978/active-record/packages/active-record-core',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -29,6 +29,6 @@ Package.onUse(function (api) {
 
 Package.onTest(function (api) {
   api.use('tinytest');
-  api.use('glass:active-record-core');
+  api.use('photonic:active-record-core');
   api.addFiles('active-record-core-tests.js');
 });

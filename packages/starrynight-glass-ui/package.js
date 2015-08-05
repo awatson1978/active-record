@@ -1,5 +1,5 @@
 Package.describe({
-  name: "glass:glass-ui",
+  name: "clinical:glass-ui",
   version: "0.2.2",
   // Brief, one-line summary of the package.
   summary: "Inspired by the Day Made of Glass videos....",
@@ -24,6 +24,6 @@ Package.onUse(function (api) {
 
 Package.onTest(function (api) {
   api.use("tinytest");
-  api.use("glass:glass-ui");
+  api.use("photonic:glass-ui");
   api.addFiles("glass-ui-tests.js");
 });
