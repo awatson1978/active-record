@@ -1,5 +1,5 @@
 Package.describe({
-  name: "clinical:glass-ui",
+  name: "photonic:glass-ui",
   version: "0.2.2",
   // Brief, one-line summary of the package.
   summary: "Inspired by the Day Made of Glass videos....",

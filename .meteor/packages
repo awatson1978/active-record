@@ -12,7 +12,7 @@ fortawesome:fontawesome
 iron:router
 grove:less
 
-starrynight:glass-ui
+photonic:glass-ui
 starrynight:dropdatabase@0.0.2
 
 #clinical:extended-api
